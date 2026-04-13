@@ -557,7 +557,7 @@ async function sendMessage(){
         'Authorization':'Bearer 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'
       },
       body:JSON.stringify({
-        model:'llama3-8b-8192',
+        model:'llama-3.3-70b-versatile',
         messages:[
           {role:'system',content:SYSTEM_PROMPT},
           ...chatHistory.map(m=>({role:m.role,content:m.content}))
